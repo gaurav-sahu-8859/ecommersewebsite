@@ -1,0 +1,1019 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+#nav2 {
+    position: sticky;
+    top: -60px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #9b1414;
+    color: #f3f3f3;
+    height: 70px;
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: nav2Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#nav2box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding-left: 25px;
+}
+
+#login {
+    /* background:#01494e; */
+    background: #741e04;
+    color: #e0a8d7;
+    margin-right: 30px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    animation-name: logAnima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in-out; */
+}
+.sign{
+    display: flex;
+    width: 200px;
+    /* margin: 0; */
+    padding: 0px;
+}
+@keyframes nav2Anima {
+    from {
+        background-color: #923e0d96;
+    }
+
+    to {
+        background-color: #a70f0f80;
+    }
+}
+
+@keyframes logAnima {
+    from {
+        background: #026e14;
+    }
+
+    to {
+        background: #041870;
+
+    }
+}
+
+#nav1 {
+    /* border: 2px solid #000205; */
+    /* background-color: #10437e; */
+    /* background-color: #4c3c3c; */
+    position: sticky;
+    top: -10px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation-name: nav1Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* #nav1::before {
+    /* border: 2px solid #000205; */
+/* background-color: #10437e; */
+/* background-color: #407a85; */
+/* position: fixed; */
+/* top: 0px; */
+/* left: 30px; */
+/* bottom: 0px; */
+/* height: 100px; */
+/* animation-name: nav1Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+/* } */
+
+
+#nav1 #navHandler {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+    width: 100%;
+}
+
+nav li,
+header li {
+    list-style: none;
+    /* color: #cccccc; */
+}
+
+#navbox1 {
+    border: none;
+    height: 98%;
+    width: 10%;
+    padding: 1%;
+
+}
+
+/* .navbox:hover {
+    border: 1px solid #cccccc;
+} */
+
+/* #navbox1:hover {
+    border: 1px solid #cccccc;
+} */
+
+.namratalogo {
+    margin: 0%;
+    margin-top: 5%;
+    height: 70%;
+    width: 60%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#nav1 .sidePanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 20%;
+    margin-right: 2%;
+    margin-top: -16px;
+    height: 100px;
+    width: 80%;
+}
+
+#navbox2 {
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-left: .1%;
+    /* display: block; */
+    color: #b3b0b0;
+    height: 80%;
+    width: 55px;
+}
+
+nav a,
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#navbox3 {
+    height: 80%;
+    width: 100px;
+    padding-top: 3%;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+#navbox4 {
+    height: 80%;
+    width: 450px;
+    padding-top: 2.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-top: 3%;
+    /* position: relative;  */
+}
+
+#navbox4 div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 80%; */
+    width: 100%;
+}
+
+
+#navbox4 #selector {
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    height: 80%;
+    cursor: pointer;
+    z-index: 1;
+    animation-name: nav1Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#navbox4 #search {
+    background-color: #e6e1db;
+    padding-left: 10px;
+    border: none;
+    height: 30px;
+    width: 190px;
+    border-radius: 45px 0px 0px 45px;
+    margin-top: 0%;
+}
+
+#navbox4 #button {
+    background-color: #febd69;
+    color: #440303;
+    font-size: 15px;
+    border-radius: 0px 45px 45px 0px;
+    color: rgb(32, 19, 5);
+    height: 30px;
+    width: 35px;
+    border: none;
+    /* position: absolute; 
+    right: 2%; */
+    /* top */
+    cursor: pointer;
+}
+
+#navbox5 {
+    color: #cccccc;
+    /* padding: 0.1%; */
+    padding-top: 1.3%;
+    height: 80%;
+    width: 110px;
+    margin-top: 3%;
+    cursor: pointer;
+    z-index: 1;
+    animation-name: nav1Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#navbox5 select {
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    animation-name: nav1Anima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#navbox6 {
+    width: 45px;
+    color: #cccccc;
+    height: 80%;
+    padding-top: 3%;
+    margin-top: 3%;
+}
+
+#navbox7 {
+    color: #f3f3f3;
+    height: 80%;
+    width: 80px;
+    padding-top: 3%;
+    margin-top: 3%;
+}
+
+@keyframes nav1Anima {
+    from {
+        background-color: #4c3c3c
+    }
+
+    to {
+        background-color: #5f4c4c;
+    }
+}
+
+#box {
+    height: 80%;
+    width: 99%;
+    background-color: #e7c5c6;
+    /* position: relative; */
+    /* display: table; */
+    overflow-y: scroll;
+}
+
+.chatsection {
+    height: 10%;
+    width: 99%;
+    background-color: #a19ce9;
+    padding: 4%;
+    padding-left: 15%;
+}
+
+#chatbt {
+    width: 0px;
+    position: fixed;
+    height: 500px;
+    bottom: 3%;
+    left: 0.2%;
+    /* overflow-y: hidden; */
+    transition: 0.5s;
+    padding-top: 65px;
+    z-index: 1;
+    display: none;
+}
+
+#chatbt a {
+    text-decoration: none;
+}
+
+.closebtn {
+    /* position: absolute;
+    right: 1%; */
+    width: 99%;
+    background-color: #e7c5c6;
+    padding-right: 3%;
+    padding-top: 2%;
+    display: flow-root;
+    text-align: right;
+    align-content: end;
+    align-items: end;
+    z-index: 2;
+}
+
+#chatbotBox {
+    /* display: inline; */
+    height: 50px;
+    width: 50px;
+    bottom: 15%;
+    left: 2%;
+    z-index: 5;
+    align-content: center;
+    background-color: #a19ce9;
+    cursor: move;
+    position: fixed;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+#chatbotBox img {
+    display: block;
+    height: 95%;
+    width: 95%;
+    margin: 2.5%;
+    z-index: 5;
+    align-content: center;
+    background-color: #a19ce9;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+main{
+    margin: 2%;
+    height: 350px;
+    width: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div{
+    position: relative;
+    margin: 2%;
+    height: 300px;
+    width: 220px;
+    background-color: #eaddb4;
+}
+main button,
+section button{
+    position: absolute;
+    bottom: 20%;
+    padding: 1%;
+    margin-left: 75px;
+    height: 40px;
+    width: 90px;
+    animation-name: cartAnima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cartAnima {
+    from {
+        height: 40px;
+        width: 90px;    }
+
+    to {
+        height: 30px;
+        width: 60px;    }
+}
+.cart{
+    background-color: #741e04;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0%;
+    margin: 0%;
+}
+section{
+    margin: 2%;
+    height: 350px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+section div{
+    position: relative;
+    margin: 2%;
+    height: 300px;
+    width: 220px;
+    background-color: #b1d6b7
+}
+
+/* footer */
+footer .footSection1 {
+    margin-top: 5%;
+    /* padding-top: 5%; */
+    color: #faf5ef;
+    background-color: #045e6e;
+    height: 99%;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footBox1 {
+    color: #faf5ef;
+    background-color: #045e6e;
+    height: 70%;
+    width: 40%;
+}
+
+.footbox2 {
+    padding-top: 10%;
+}
+
+.footbox3 {
+    padding-top: 10%;
+}
+
+
+
+footer ul {
+    padding-left: 3%;
+    margin-top: 20%;
+    background-color: #045e6e;
+    color: #faf5ef;
+}
+
+footer ul li select {
+    color: #faf5ef;
+    background-color: #045e6e;
+    border: none;
+    margin-left: -5px;
+    font-size: 15px;
+    /* height: 50px; */
+}
+
+footer ul li img {
+    width: 200px;
+}
+
+footer ul li {
+    list-style: none;
+    /* height: 30px; */
+    /* align-self: baseline; */
+    padding-top: 2%;
+}
+
+
+footer h2 {
+    color: #c08831;
+}
+
+.footSection2 {
+    color: #faf5ef;
+    background-color: #045e6e;
+    height: 400px;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footbox1 {
+    color: #faf5ef;
+    background-color: #045e6e;
+    height: 60%;
+    width: 80%;
+    padding: 10%;
+}
+
+#footbox3 {
+    color: #faf5ef;
+    background-color: #045e6e;
+    height: 60%;
+    width: 80%;
+    padding: 10%;
+}
+
+@media only screen and (min-width:280px) and (max-width: 650px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #nav1 #navHandler {
+        justify-content: space-between;
+    }
+
+    #navbox1 {
+        margin-top: 4%;
+        height: 85%;
+        width: 45%;
+    }
+
+    .namratalogo {
+        margin-top: 0%;
+        height: 85%;
+        width: 95%;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        height: 400px;
+        top: 5%;
+        right: 0%;
+        /* background-color: #111; */
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 65px;
+        z-index: 4;
+        animation-name: nav1Anima2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    /* .sidepanel ul {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    #selector1 {
+        color: #818181;
+        background-color: transparent;
+        border: none;
+        height: 45px;
+        margin: 1%;
+        width: 190px;
+        font-size: 22px;
+        z-index: 1;
+        animation-name: nav1Anima2;
+        /* animation-duration: 1s; */
+        animation-iteration-count: infinite;
+    }
+
+
+    #nav1box1 #search {
+        background-color: #e6e1db;
+        padding-left: 10px;
+        border: none;
+        height: 30px;
+        width: 155px;
+        border-radius: 45px 0px 0px 45px;
+        margin-top: 0%;
+    }
+
+    #nav1box1 #button {
+        background-color: #febd69;
+        color: #440303;
+        font-size: 15px;
+        border-radius: 0px 45px 45px 0px;
+        color: rgb(32, 19, 5);
+        height: 30px;
+        width: 35px;
+        border: none;
+        /* position: absolute; 
+          right: 2%; */
+        /* top */
+        cursor: pointer;
+    }
+
+    #selector2 {
+        color: #818181;
+        background-color: transparent;
+        border: none;
+        height: 45px;
+        margin: 1%;
+        width: 190px;
+        font-size: 22px;
+        z-index: 1;
+        animation-name: nav1Anima2;
+        /* animation-duration: 1s; */
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes nav1Anima2 {
+        from {
+            background-color: #4c3c3cd3
+        }
+
+        to {
+            background-color: #5f4c4ccb;
+        }
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 160px;
+        font-size: 36px;
+        color: #818181;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        /* background-color: #111; */
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    /* .sidePanel {
+    display: flex;
+    justify-content: space-between;
+    color: #f1f1f1;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+    } */
+
+
+    /* #nav2box {
+        display: flex;
+        width: 375px;
+        padding-left: 2px;
+        justify-content: space-between;
+    } */
+
+    /* #navbox1:hover {
+        border: 1px solid #cccccc;
+    } */
+
+}
+@media screen and (min-width: 651px) and (max-width: 810px) {
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #nav1 {
+        /* border: 2px solid #000205; */
+        /* background-color: #10437e; */
+        background-color: #045e6e;
+        position: sticky;
+        top: -10px;
+        margin-left: 0%;
+        /* height: 80px; */
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    #nav1::before {
+        /* border: 2px solid #000205; */
+        /* background-color: #10437e; */
+        background-color: #045e6e;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        bottom: 10px;
+        /* height: 100px; */
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    #nav1 ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: 0%;
+        margin-top: -16px;
+        height: 120px;
+        /* overflow-x: hidden; */
+    }
+
+    #nav1 .sidePanel {
+
+        width: 75%;
+    }
+
+    nav li {
+        list-style: none;
+
+        /* color: #cccccc; */
+    }
+
+    #navbox1 {
+        border: none;
+        margin-top: 1%;
+        height: 90%;
+        width: auto;
+    }
+
+
+    .namratalogo {
+        margin-top: 15%;
+        height: 35px;
+        width: auto;
+    }
+
+    #navbox2 {
+        margin-top: 1%;
+        padding-top: 45px;
+        padding-left: 1%;
+        height: 90%;
+        width: 8%;
+    }
+
+    #navbox3 {
+        height: 90%;
+        /* width: 100px; */
+        padding-top: 45px;
+        padding-left: 5px;
+        margin-top: 1%;
+    }
+
+    #navbox4 {
+        display: none;
+    }
+
+    #navbox5 {
+        margin-top: 2%;
+        height: 90%;
+        padding-top: 15px;
+        padding-left: 9px;
+    }
+
+    #navbox6 {
+        width: 10%;
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 2%;
+        margin-top: 1%;
+    }
+
+    #navbox7 {
+        height: 90%;
+        width: 10%;
+        padding-top: 45px;
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+
+}
+@media only screen and (min-width:811px) and (max-width: 821px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* 
+    #nav1 {
+        top: -10px;  
+    } */
+
+    /* #nav1::before {
+        
+        background-color: #045e6e;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        bottom: 10px;
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    } */
+
+    #nav1 ul {
+        padding-right: 1%;
+        margin-left: 0.5%;
+        margin-top: -16px;
+        height: 120px;
+        /* overflow-x: hidden; */
+    }
+
+    #nav1 .sidePanel {
+        width: 76%;
+    }
+
+    #navbox1 {
+        border: none;
+        margin-top: 1%;
+        height: 90%;
+        width: auto;
+    }
+
+    .namratalogo {
+        margin-top: 15%;
+        height: 35px;
+        width: auto;
+    }
+
+    #navbox2 {
+        margin-top: 1%;
+        padding-top: 45px;
+        padding-left: 1%;
+        height: 90%;
+        width: 8%;
+    }
+
+    #navbox3 {
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 5px;
+        margin-top: 1%;
+    }
+
+    #navbox4 {
+        display: none;
+    }
+
+    #navbox5 {
+        margin-top: 1%;
+        height: 90%;
+        padding-top: 15px;
+        padding-left: 9px;
+    }
+
+    #navbox6 {
+        width: 10%;
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 2%;
+        margin-top: 1%;
+    }
+
+    #navbox7 {
+        height: 90%;
+        width: 10%;
+        padding-top: 45px;
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+
+}
+@media screen and (min-width:822px) and (max-width: 990px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #nav1 ul {
+        padding-right: 1%;
+        margin-left: 0.5%;
+        margin-top: -16px;
+        height: 120px;
+        /* overflow-x: hidden; */
+    }
+
+    #nav1 .sidePanel {
+
+        width: 78%;
+    }
+
+    #navbox1 {
+        border: none;
+        margin-top: 1%;
+        height: 90%;
+        width: auto;
+    }
+
+    .namratalogo {
+        margin-top: 10%;
+        height: 40px;
+        width: auto;
+    }
+
+
+    #navbox2 {
+        margin-top: 1%;
+        padding-top: 45px;
+        padding-left: 1%;
+        height: 90%;
+        width: 8%;
+    }
+
+    #navbox3 {
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 5px;
+        margin-top: 1%;
+    }
+
+
+    #navbox4 {
+        display: none;
+    }
+
+    /* 
+    #navbox4 #selector {
+        color: #ffffff;
+        font-size: 18px;
+        border: none;
+        height: 80%;
+        margin-top: 0%;
+        cursor: pointer;
+        z-index: 1;
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    #navbox4 #search {
+        background-color: #e6e1db;
+        padding-left: 10px;
+        border: none;
+        height: 30px;
+        width: 190px;
+        border-radius: 45px 0px 0px 45px;
+        margin-top: 1%;
+    }
+
+    #navbox4 #button {
+        background-color: #febd69;
+        color: #440303;
+        font-size: 15px;
+        border-radius: 0px 45px 45px 0px;
+        color: rgb(32, 19, 5);
+        height: 30px;
+        width: 50px;
+        border: none;
+        position: initial top: 50%;
+    } */
+
+    /* #navbox5 {
+        margin-top: 1%;
+        height: 90%;
+        padding-top: 15px;
+        padding-left: 9px;
+    } */
+
+    #navbox6 {
+        width: 10%;
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 2%;
+        margin-top: 1%;
+    }
+
+    #navbox7 {
+        height: 90%;
+        width: 10%;
+        padding-top: 45px;
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+}
