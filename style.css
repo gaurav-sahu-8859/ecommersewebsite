@@ -384,6 +384,11 @@ main div{
     width: 220px;
     background-color: #eaddb4;
 }
+.sellimg{
+    height: 300px;
+    width: 220px;
+    background-size: cover;
+}
 main button,
 section button{
     position: absolute;
